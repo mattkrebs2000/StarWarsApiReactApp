@@ -1,0 +1,29 @@
+body{
+
+background:url(https://media3.giphy.com/media/xT8qB50yhFINpFTymI/giphy.gif?cid=ecf05e47hqtkvdotl7need9e9iyo23p6n2p5t75fa82ht78o&rid=giphy.gif);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+
+  
+}
+body .container2 {
+  margin-top: -50px;
+  background: rgba(0,0,0,.85);
+    width: inherit;
+    height: fit-content;
+    min-height: 1000px;
+   font-family: fantasy;
+   text-align: center;
+   padding:40px;
+   font-size: 22px;
+   color: white;
+}
+img {
+max-width: 580px;
+  width: 70vw;
+}
+
+
+
+
