@@ -6,10 +6,10 @@ class ResultsContainer extends Component {
   render() {
     return (
       <div row className="space">
-        <div className="Results">
+       
           <Output />
           
-        </div>
+        
       </div>
     );
   }

@@ -6,3 +6,9 @@ margin: 30px;
 border: 2px solid red;
 background-color: rgba(255, 255, 255, 0.1);
 }
+
+div.drop2.col-2 {
+
+margin-right: auto !important;
+
+}
