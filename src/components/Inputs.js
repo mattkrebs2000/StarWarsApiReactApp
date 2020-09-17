@@ -9,7 +9,6 @@ class Inputs extends Component {
           <div className="form-group styling">
             <label htmlForm="characters">Search:</label>
             <input
-              className="Input"
               type="text"
               id="findcharacters"
               name="character"
