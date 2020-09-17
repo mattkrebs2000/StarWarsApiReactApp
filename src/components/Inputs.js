@@ -1,21 +1,28 @@
 import React, { Component } from "react";
+import "./Inputs.css";
 
 class Inputs extends Component {
   render() {
     return (
       <div>
         <form className="create-form">
-          <div className="form-group">
+          <div className="form-group styling">
             <label htmlForm="characters">Search:</label>
             <input
+              className="Input"
               type="text"
               id="findcharacters"
               name="character"
               value="Character Trait"
+              style={{ color: "white", backgroundColor: "rgba(0,0,0,.2)" }}
             />
-            <button type="submit">Find!</button>
+            <button
+              type="submit"
+              style={{ color: "white", backgroundColor: "rgba(0,0,0,.2)" }}
+            >
+              Find!
+            </button>
           </div>
-        
         </form>
       </div>
     );
@@ -23,18 +30,3 @@ class Inputs extends Component {
 }
 
 export default Inputs;
-
-// <div className="dropdown">
-//   <button className="dropbtn"> Dropdown</button>
-//   <div id="myDropdown" className="dropdown-content">
-//     <input type="text" placeholder="Search.." id="myInput">
-//       <a href="">About</a>
-//       <a href="">Base</a>
-//       <a href="">Blog</a>
-//       <a href="">Contact</a>
-//       <a href="">Custom</a>
-//       <a href="">Support</a>
-//       <a href="">Tools</a>
-//     </input>
-//   </div>
-// </div>;
