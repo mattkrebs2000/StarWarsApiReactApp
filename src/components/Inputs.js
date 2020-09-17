@@ -7,11 +7,11 @@ class Inputs extends Component {
     super(props);
     this.state = { suggestions: [] };
     this.search = this.search.bind(this);
+   
   }
 
   search(event) {
     let input = event.target.value;
-   
     let matches = [],
       i;
 
@@ -22,28 +22,27 @@ class Inputs extends Component {
         }
       }
     }
-
     this.setState({ suggestions: matches });
   }
 
+  
+
   render() {
+
     return (
       <div>
         <form className="create-form">
           <div className="form-group styling">
-            <label htmlForm="characters">Search:</label>
+            <label>Search: </label>
             <input
               onKeyUp={this.search.bind(this)}
               type="text"
-              style={{ color: "white", backgroundColor: "rgba(0,0,0,.2)" }}
+              style={{
+                color: "white",
+                backgroundColor: "rgba(0,0,0,.2)",
+                width: "180px",
+              }}
             />
-            <React.Fragment>
-              <ul style={{ listStyleType: "none" }}>
-                {this.state.suggestions.map((res) => (
-                  <li key={res}>{res}</li>
-                ))}
-              </ul>
-            </React.Fragment>
             <button
               type="submit"
               style={{ color: "white", backgroundColor: "rgba(0,0,0,.2)" }}

@@ -5,11 +5,8 @@ import Output from "./Output.js";
 class ResultsContainer extends Component {
   render() {
     return (
-      <div row className="space">
-       
-          <Output />
-          
-        
+      <div className="space">
+          <Output />    
       </div>
     );
   }

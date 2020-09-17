@@ -3,12 +3,24 @@ import "./Output.css";
 
 
 class Output extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [],
+    };
+  }
   render() {
-    return (
-      <div
-        className="container"
-      
-      >
+
+
+     var request = new Request("https://swapi.dev/api/people/");
+
+     fetch(request)
+       .then((res) => res.json())
+       .then((data) => this.setState({ posts: data.results }));
+
+     const postItems = this.state.posts.map((post) => (
+
+      <div className="container">
         <div className="row">
           <div className="col-10">
             <div
@@ -21,9 +33,9 @@ class Output extends Component {
             >
               <div className="Image col-3">. .</div>
               <div className="col-5">
-                <div className="row">Hi</div>
+                <div className="row">{post.name}</div>
                 <div className="row" style={{ fontSize: 15 }}>
-                  How are you?
+                 
                 </div>
               </div>
               <div
@@ -67,6 +79,18 @@ class Output extends Component {
           </div>
         </div>
       </div>
+
+
+     ));
+
+
+
+    return (
+
+       <div>
+          {postItems}
+        </div>
+
     );
   }
 }

@@ -4,7 +4,20 @@ import './App.css';
 import SelectingContainer from './components/SelectingContainer';
 import ResultsContainer from "./components/ResultsContainer";
 
+
+
+
+
+
+
 function App() {
+
+// var request = new Request("https://swapi.dev/api/people/");
+
+// fetch(request)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data))
+
   return (
     <div className="container2">
       <Header />
