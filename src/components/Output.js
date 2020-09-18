@@ -6,8 +6,7 @@ class Output extends Component {
   
   render() {
     return (
-
-       <div className="container">
+      <div className="container">
         <div className="row">
           <div className="col-10">
             <div
@@ -22,15 +21,13 @@ class Output extends Component {
               <div className="col-5">
                 <div className="row">{this.props.name}</div>
                 <div className="row" style={{ fontSize: 15 }}>
-                 
+                  HT/WT:{this.props.height}/{this.props.weight}
                 </div>
               </div>
               <div
                 className="drop col-2"
                 style={{ float: "right", marginTop: "-20px" }}
-              >
-                1.75
-              </div>
+              >{this.props.gender}</div>
             </div>
             <div
               className="row"
@@ -45,7 +42,7 @@ class Output extends Component {
                 marginRight: "0px !important",
               }}
             >
-              hello there hi <span> </span>
+              eyes:{this.props.eyes} hair:{this.props.hair} <span> </span>
             </div>
           </div>
           <div
