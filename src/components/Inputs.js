@@ -31,10 +31,11 @@ class Inputs extends Component {
 
     return (
       <div>
-        <form className="create-form">
+        {/* <form className="create-form"> */}
           <div className="form-group styling">
             <label>Search: </label>
             <input
+            onChange={ (event) => this.setState({searchtext: event.target.value})}
               onKeyUp={this.search.bind(this)}
               type="text"
               style={{
@@ -44,13 +45,13 @@ class Inputs extends Component {
               }}
             />
             <button
-              type="submit"
+              type="submit" onClick={() => this.props.textsearched(this.state.searchtext)}
               style={{ color: "white", backgroundColor: "rgba(0,0,0,.2)" }}
             >
               Find!
             </button>
           </div>
-        </form>
+        {/* </form> */}
       </div>
     );
   }
