@@ -11,13 +11,15 @@ class App extends Component {
   };
 
   componentDidMount() {
-    var request = new Request("https://swapi.dev/api/people/?50/");
+    var request = new Request("https://swapi.dev/api/people/");
 
     fetch(request)
       .then((res) => res.json())
       .then((data) =>
         this.setState({ posts: data.results, filteredposts: data.results })
+       
       );
+      
   }
 
   textsearched = (value) => {
@@ -28,22 +30,24 @@ class App extends Component {
 
       for (let prop in post) {
         let lower = JSON.stringify(post[prop]).toLowerCase();
-        if (lower.includes(value.toLowerCase())) {
+        if (lower.includes(value.toLowerCase())) 
+        {
           match = true;
         }
       }
-      if (match == true) {
+      if (match === true) {
         posts.push(post);
       }
     }
     this.setState({ filteredposts: posts });
+   
   };
 
   render() {
     return (
       <div className="container2">
         <Header />
-        <img src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG32.png"></img>
+        <img src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG32.png" alt= "?"></img>
         <SelectingContainer
           textsearched={(value) => this.textsearched(value)}
         />

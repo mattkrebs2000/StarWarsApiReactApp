@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./Output.css";
 
-
 class Output extends Component {
-  
   render() {
     return (
       <div className="container">
@@ -27,7 +25,9 @@ class Output extends Component {
               <div
                 className="drop col-2"
                 style={{ float: "right", marginTop: "-20px" }}
-              >{this.props.gender}</div>
+              >
+                {this.props.gender}
+              </div>
             </div>
             <div
               className="row"
@@ -68,5 +68,3 @@ class Output extends Component {
 }
 
 export default Output;
-
-
