@@ -20,7 +20,7 @@ class Home extends Component {
 
 componentDidUpdate() {
 // if the state has not been set with the characters then set the state. 
-if (this.props.characters != this.state.posts){
+if (this.props.characters !== this.state.posts){
 this.setState({posts:this.props.characters, filteredposts:this.props.characters})
 }
 }
