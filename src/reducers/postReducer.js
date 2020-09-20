@@ -1,7 +1,7 @@
 import { FETCH_POSTS } from "../actions/types";
 
 const initialState = {
-  items: []
+  characters: []
 };
 
 export default function (state = initialState, action) {
@@ -9,7 +9,7 @@ export default function (state = initialState, action) {
     case FETCH_POSTS:
       return {
         ...state,
-        items: action.payload,
+        characters: action.payload.results,
       };
    
     default:
