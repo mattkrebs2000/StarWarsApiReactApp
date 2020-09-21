@@ -37,8 +37,10 @@ this.setState({posts:this.props.characters, filteredposts:this.props.characters}
 
       for (let prop in post) {
         let lower = JSON.stringify(post[prop]).toLowerCase();
-        if (lower.includes(value.toLowerCase())) {
+        if (lower.startsWith(value.toLowerCase(),1)) {
           match = true;
+
+          console.log(lower, " and " ,value)
         }
       }
       if (match === true) {
