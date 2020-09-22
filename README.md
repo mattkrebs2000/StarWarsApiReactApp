@@ -3,7 +3,7 @@
 
 ![alt text][logo]
 
-[logo]: https://github.com/mattkrebs2000/reactburger/blob/master/burger.png
+[logo]: https://github.com/mattkrebs2000/StarWarsApiReactApp/blob/master/public/images/FrontPage.png?raw=true
 
 This React App was created with Redux. It is a search engine which uses the SWAPI (Star Wars API) to display characters that have (in their data) properties that match the search string. You can search by gender (male/femal), by height/weight (a number), or by name.   
 
