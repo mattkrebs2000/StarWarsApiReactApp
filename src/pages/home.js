@@ -54,7 +54,7 @@ this.setState({posts:this.props.characters, filteredposts:this.props.characters}
     return (
       <div className="container2">
         <Header />
-        <img
+        <img class="starwars"
           src="http://pngimg.com/uploads/star_wars_logo/star_wars_logo_PNG32.png"
           alt="?"
         ></img>

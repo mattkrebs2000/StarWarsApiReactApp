@@ -15,7 +15,9 @@ class Output extends Component {
                 paddingLeft: "10px",
               }}
             >
-              <div className="Image col-3">. .</div>
+              <div className="CharacterImage col-3">
+                {this.props.name === "R2-D2" ? <img src="./images/R2-D2.png" alt="?"></img> : this.props.name === "C-3PO" ? <img src="./images/C-3PO.png" alt="?"></img>: this.props.name === "Luke Skywalker" ? <img src="./images/Luke Skywalker.png" alt="?"></img>: this.props.name === "Beru Whitesun lars" ? <img src="./images/Beru Whitesun lars.png" alt="?"></img>: this.props.name === "Biggs Darklighter" ? <img src="./images/Biggs Darklighter.png" alt="?"></img>: this.props.name === "Darth Vader" ? <img src="./images/Darth Vader.png" alt="?"></img>:this.props.name === "Leia Organa" ? <img src="./images/Leia Organa.png" alt="?"></img>:this.props.name === "Obi-Wan Kenobi" ? <img src="./images/Obi-Wan Kenobi.png" alt="?"></img>:this.props.name === "Owen Lars" ? <img src="./images/Owen Lars.png" alt="?"></img>:this.props.name === "R5-D4" ? <img src="./images/R5-D4.png" alt="?"></img>: "image"}
+              </div>
               <div className="col-5">
                 <div className="row">{this.props.name}</div>
                 <div className="row" style={{ fontSize: 15 }}>
